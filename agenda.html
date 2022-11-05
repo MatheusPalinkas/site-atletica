@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- arquivos style -->
+  <link href="./styles/style.css" rel="stylesheet">
+  <link href="./styles/darkMode.css" rel="stylesheet">
+  
+  <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+
+    <link rel="stylesheet" href="./styles/produtos.css" />
+
+    <title>Agenda</title>
+</head>
+
+<body>
+
+ <div class="container">
+ 
+      <header class="menu">
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Esportes</a></li>
+            <li><a href="#">Agenda</a></li>
+            <li><a href="#">Produtos</a></li>
+          </ul>
+        </nav>
+      </header>
+      
+  <div id="container">
+    
+
+      <div id="header">
+        <div class="toggle">
+    <input id="switch" type="checkbox" name="theme">
+    <label for="switch">Toggle</label>
+  </div>
+
+        <div id="monthDisplay"></div>
+
+        <div>
+          <button id="backButton">Voltar</button>
+          <button id="nextButton">Próximo</button>
+        </div>
+          
+      </div>
+
+      <div id="weekdays">
+        <div>Domingo</div>
+        <div>Segunda-feira</div>
+        <div>Terça-feira</div>
+        <div>Quarta-feira</div>
+        <div>Quinta-feira</div>
+        <div>Sexta-feira</div>
+        <div>Sábado</div>
+      </div>
+
+
+      <!-- div dinamic -->
+      <div id="calendar" ></div>
+
+   
+  </div>
+
+  <div id="newEventModal">
+    <h2>New Evente</h2>
+
+    <input id="eventTitleInput" placeholder="Event Title"/>
+
+    <button id="saveButton"> Salvar</button>
+    <button id="cancelButton">Cancelar</button>
+  </div>
+
+  <div id="deleteEventModal">
+    <h2>Evento</h2>
+
+    <div id="eventText"></div><br>
+
+
+    <button id="deleteButton">Deletar</button>
+    <button id="closeButton">Fechar</button>
+  </div>
+
+  <div id="modalBackDrop"></div>
+
+
+  <script src="scripts/darkMode.js"></script>
+  <script src="./scripts/main.js"></script>
+  
+    <footer class="footer">
+      <div class="container_footer">
+        <ul class="footer-contato">
+          <li>
+            <img src="./assets/instagram.svg" />
+            @atleticaifspcbt
+          </li>
+          <li>
+            <img src="./assets/telefone.svg" />
+            (13) xxxxx-xxxx
+          </li>
+          <li>
+            <img src="./assets/email.svg" />
+            atleticaifspcbt@gmail.com
+          </li>
+        </ul>
+
+        <div class="parceiros">
+          <strong>Parceiras</strong>
+          <div class="img_parceiros">
+            <img src="./assets/parceira_1.png" alt="" />
+            <img src="./assets/parceira_2.png" alt="" />
+            <img src="./assets/parceira_3.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </footer>
+</body>
+</html>
