@@ -1,0 +1,32 @@
+.produtos{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  padding: 60px 0px 0px 0px;
+}
+
+
+
+.produtos h1 {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.produtos p {
+  padding: 20px 20px 0px 0px;
+  font-size: 22px;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-weight: 200;
+  
+}
+
+.produtos img {
+    max-width:506px;
+    max-height:508px;
+    margin-right: 60px;
+
+}
