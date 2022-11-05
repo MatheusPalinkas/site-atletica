@@ -22,3 +22,33 @@
   cursor: pointer;
   padding: 10px 20px;
 }
+
+h2 {
+  font-weight: bold;
+  font-size: 35px;
+  color: var(--secondary);
+}
+
+.margin_top {
+  margin-top: 90px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-radius: 10px;
+  padding: 30px;
+  background: var(--grayMedium);
+}
+
+.card h3 {
+  color: var(--primaryDark);
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.card p {
+  font-size: 25px !important;
+  font-weight: 300;
+}

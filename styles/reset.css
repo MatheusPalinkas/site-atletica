@@ -5,6 +5,7 @@
   box-sizing: border-box;
 
   font-family: "Poppins", sans-serif;
+  color: var(--grayLight);
 
   --primary: #00531d;
   --secondary: #ea682c;
