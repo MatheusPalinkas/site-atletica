@@ -1,0 +1,33 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  outline: none;
+  box-sizing: border-box;
+
+  font-family: "Poppins", sans-serif;
+
+  --primary: #00531d;
+  --secondary: #ea682c;
+  --black: #020401;
+  --primaryMedium: #00370e;
+  --primaryDark: #01240c;
+  --grayMedium: #919d8c;
+  --grayLight: #f3f3f3;
+  --background: #e6e9e5;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background: var(--primaryDark);
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
