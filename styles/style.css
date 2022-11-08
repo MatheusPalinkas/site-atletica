@@ -1,34 +1,26 @@
-html{
+html {
+  --body-color: #fffcff;
 
+  --header-color: #d36c6c;
 
-  --body-color:#FFFCFF ;
+  --header-button: #92a1d1;
 
-  --header-color:#d36c6c;
+  --color-weekdays: #247ba0;
 
-  --header-button:#92a1d1;
-
-  --color-weekdays: #247BA0;
-  
-  --box-shadow: #CBD4C2;
+  --box-shadow: #cbd4c2;
 
   --hover: #e8faed;
 
-  --current-day:#006400;
+  --current-day: #006400;
 
   --event-color: #58bae4;
 
   --modal-event: #e8f4fa;
 
-
- --color-day:#4F7942;
-  
-
+  --color-day: #4f7942;
 }
 
-
-
 body {
-  display: flex;
   margin-top: 50px;
   justify-content: center;
   background-color: var(--body-color);
@@ -46,26 +38,26 @@ button {
 
 #header {
   padding: 10px;
-  color: var(--header-color) ;
+  color: var(--header-color);
   font-size: 26px;
   font-family: sans-serif;
   display: flex;
   justify-content: space-between;
 }
 #header button {
-  background-color:var(--header-button);
+  background-color: var(--header-button);
 }
 #container {
-	padding: 60px;
- 	margin-left: auto;
-    margin-right: auto;
-    
+  padding: 60px;
+  margin-left: auto;
+  margin-right: auto;
+
   width: 890px;
 }
 #weekdays {
   width: 100%;
   display: flex;
-  color: var(--color-weekdays) ;
+  color: var(--color-weekdays);
 }
 #weekdays div {
   width: 100px;
@@ -97,7 +89,7 @@ button {
 }
 
 .day + #currentDay {
-  background-color:var(--current-day);
+  background-color: var(--current-day);
 }
 .event {
   font-size: 10px;
@@ -109,7 +101,8 @@ button {
   overflow: hidden;
 }
 
-#newEventModal, #deleteEventModal {
+#newEventModal,
+#deleteEventModal {
   display: none;
   z-index: 20;
   padding: 25px;
@@ -135,10 +128,12 @@ button {
 #eventTitleInput.error {
   border: 2px solid red;
 }
-#cancelButton, #deleteButton {
+#cancelButton,
+#deleteButton {
   background-color: var(--header-color);
 }
-#saveButton, #closeButton {
+#saveButton,
+#closeButton {
   background-color: var(--header-button);
 }
 #eventText {
@@ -152,6 +147,5 @@ button {
   width: 100vw;
   height: 100vh;
   position: absolute;
-  background-color: rgba(0,0,0,0.8);
+  background-color: rgba(0, 0, 0, 0.8);
 }
-
