@@ -34,5 +34,32 @@ $(function () {
     };
     Object.keys(language).forEach(item => {
         document.querySelector('[data-lang="'+item+'"]').textContent =  language[item];
-    })
+    });
+
+    $("#sobre_nos_2").hide();
 })
+
+var itemSlide = 1;
+
+$("#btnAnterior").click(function(){           
+    $("#sobre_nos_" + itemSlide).hide();
+
+    itemSlide--;
+
+    if(itemSlide <= 0)
+        itemSlide = 2;
+
+        $("#sobre_nos_" + itemSlide).fadeIn("fast");
+    
+});
+
+$("#btnProximo").click(function(){           
+    $("#sobre_nos_" + itemSlide).hide();
+
+    itemSlide++;
+
+    if(itemSlide > 2 )
+        itemSlide = 1;
+
+        $("#sobre_nos_" + itemSlide).fadeIn("fast");
+});

@@ -46,3 +46,26 @@
   flex-direction: column;
   gap: 50px;
 }
+
+.div-container-carrosel{
+  position: relative;
+}
+
+.btn{
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  background: var(--secondary);
+  border: none;
+  top: 50%;
+  font-size: 30px;
+}
+
+#btnAnterior{
+  left: 10px;
+}
+
+#btnProximo{
+  right: 10px;
+}
